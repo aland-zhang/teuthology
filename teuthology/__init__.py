@@ -103,7 +103,7 @@ def patch_gevent_hub_error_handler():
         if not issubclass(type, Hub.SYSTEM_ERROR + Hub.NOT_ERROR):
             log.error("Uncaught exception (Hub)", exc_info=(type, value, tb))
 
-        self._origin_handle_error(context, type, value, tb)
+        #self._origin_handle_error(context, type, value, tb)
 
     Hub.handle_error = custom_handle_error
 
